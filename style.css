@@ -32,7 +32,7 @@ nav{
   
 }
 
-/* logo */
+
 .logo{
   display: flex;
   justify-content: flex-start;
@@ -56,17 +56,21 @@ nav{
 
 .nav-list-conatainer{
   width: 100%;
+  /* margin-left: -50%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .nav-list{
-  /* width: 40%; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 2.5rem;
+}
+
+.close-btn{
+  display: none;
 }
 
 .nav-items{
@@ -110,25 +114,53 @@ nav{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 0rem;
-    position: relative;
+  }
+
+  .logo-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .menu-btn{
     display: inline;
-    position: absolute;
-    top: 1.25rem;
-    right: 0px;
   }
 
   .nav-list-conatainer{
+    /* transition: margin-left 500ms ease-in; */
+    margin-left: -50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    background-color: rgba(7, 7, 7, 0.2);
+    backdrop-filter: blur(20px) saturate(160%) contrast(95%) brightness(140%);
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: flex-start;
     gap: 2rem;
+    display: none;
   }
 
   .nav-list{
+    padding-top: 5rem;
     flex-direction: column;
+    gap: 3rem;
+  }
+
+  .close-btn{
+    display: inline;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid rgb(5, 5, 255);
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 1.3rem;
+    left: 80%;
+    font-size: 1rem;
   }
 
 
