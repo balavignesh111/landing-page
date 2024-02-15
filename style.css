@@ -15,21 +15,18 @@ body{
   color: #fff;
   width: 100vw;
   min-height: 100vh;
-
-  /* regular -400 */
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 0% 5%;
 }
 
 nav{
   width: 100%;
-  padding: 1rem 0rem;
+  padding: 1rem 10%;
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  
+  position: fixed;
 }
 
 
@@ -107,7 +104,49 @@ nav{
   display: none;
 }
 
-@media screen and (max-width: 750px){
+/* bg image */
+.bg-image{
+  width: 50%;
+  height: auto;
+  background: url('https://cdn.sanity.io/images/tlr8oxjg/production/d2f16531bde974464ad7ab74dc335790dbdebffa-1192x668.png?w=3840&q=80&fit=clip&auto=format') no-repeat;
+  background-size: 100% auto;
+  
+}
+
+.bg-image-cnt{
+  font-size: 3.5rem;
+}
+
+.bg-box{
+  padding: 8rem 10% 0rem 10%;
+  width: 100%;
+  display: flex;
+  
+}
+
+.bg-box-content{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.btn-box{
+  background-color: #fff;
+  width: 20rem;
+}
+
+.btn-box i{
+  color: black;
+}
+
+/* box-title */
+.box-title{
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 750px){ 
   nav{
     display: flex;
     flex-direction: column;
@@ -129,20 +168,20 @@ nav{
   }
 
   .nav-list-conatainer{
-    /* transition: margin-left 500ms ease-in; */
+    transition: margin-left 1000ms ease-in-out;
     margin-left: -50%;
     position: absolute;
     top: 0;
     left: 0;
     width: 45%;
-    height: 100%;
+    min-height: 100vh;
     background-color: rgba(7, 7, 7, 0.2);
     backdrop-filter: blur(20px) saturate(160%) contrast(95%) brightness(140%);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 2rem;
-    display: none;
+    /* display: none; */
   }
 
   .nav-list{
@@ -163,5 +202,28 @@ nav{
     font-size: 1rem;
   }
 
+  /* background image */
+
+  .bg-box{
+    flex-direction: column;
+    padding-top: 6rem;
+  }
+
+  .bg-box-content{
+    width: 100%;
+  }
+
+  .box-title{
+    font-size: 2rem;
+  }
+
+  .btn-box{
+    width: 100%;
+  }
+
+  .bg-box{
+    width: 100%;
+    height: auto;
+  }
 
 }
