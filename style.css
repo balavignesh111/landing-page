@@ -27,6 +27,7 @@ nav{
   align-items: center;
   gap: 2.5rem;
   position: fixed;
+  background-color: black;
 }
 
 
@@ -53,10 +54,10 @@ nav{
 
 .nav-list-conatainer{
   width: 100%;
-  /* margin-left: -50%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 0%;
 }
 
 .nav-list{
@@ -121,7 +122,7 @@ nav{
   padding: 8rem 10% 0rem 10%;
   width: 100%;
   display: flex;
-  
+  gap: 1rem;
 }
 
 .bg-box-content{
@@ -132,12 +133,41 @@ nav{
 }
 
 .btn-box{
-  background-color: #fff;
-  width: 20rem;
+  background-color: black;
+  width: 80%;
+  /* padding: 0.75rem; */
+  border: 1px solid rgb(5, 5, 255);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;  
 }
 
 .btn-box i{
+  color: grey;
+  font-size: 0.75rem;
+}
+
+.btn-box input{
+  color: grey;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.find-btn{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  background-color: #fff;
   color: black;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border-color: none;
+  outline: none;
+  border: none;
+  margin: 0.25rem 0.25rem 0.25rem 0rem;
 }
 
 /* box-title */
@@ -207,6 +237,7 @@ nav{
   .bg-box{
     flex-direction: column;
     padding-top: 6rem;
+    gap: 2rem;
   }
 
   .bg-box-content{
@@ -226,4 +257,8 @@ nav{
     height: auto;
   }
 
+  .bg-image{
+    width: 100%;
+    height: 12rem;
+  }
 }
